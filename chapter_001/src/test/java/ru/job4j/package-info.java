@@ -1,6 +1,6 @@
 /**
  * //TODO add comments.
- * Calculator
+ * CalculatorTest
  * @author Dmitrij Gribovskij
  */
 package ru.job4j;
