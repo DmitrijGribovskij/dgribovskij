@@ -1,30 +1,53 @@
 package calculator;
 /**
+* Class Calculator.
 * @author Dmitrij Gribovskij
-* @version $Id$
+* @since 28.11.2016
 */
 public class Calculator {
 	/**
-	* result.
+	* result - результат вычисления.
 	*/
 	private double result;
 	/**
-	* sum.
-	* @param first - first.
+	* sum - сумма двух чисел.
+	* @param first - первое число
+	* @param second - второе число
 	*/
-	public void sum(double first) {
-		result = result + first;
+	public void sum(double first, double second) {
+		result = first + second;
 	}
 	/**
 	* subtraction.
-	* @param second - second
+	* @param first - первое число
+	* @param second - второе число
 	*/
-	public void subtraction(double second) {
-		result = result - second;
+	public void subtraction(double first, double second) {
+		result = first - second;
+	}
+	/**
+	* subtraction.
+	* @param first - первое число
+	* @param second - второе число
+	*/
+	public void multiplication(double first, double second) {
+		result = first * second;
+	}
+	/**
+	* subtraction.
+	* @param first - первое число
+	* @param second - второе число
+	*/
+	public void divide(double first, double second) {
+		if (second == 0) {
+			result = 0;
+		} else {
+			result = first / second;
+		}
 	}
 	/**
 	* getResult.
-	* @return - result
+	* @return - result результат вычисления
 	*/
 	public double getResult() {
 		return result;
