@@ -15,7 +15,7 @@ public class Max {
 	* @return - max number
 	*/
 	public int max(int first, int second) {
-		return first > second ? first : second;;
+		return first > second ? first : second;
 	}
 	/**
 	* method max three numbers.
@@ -25,6 +25,6 @@ public class Max {
 	* @return - max number
 	*/
 	public int max(int first, int second, int third) {
-		return first > max(second, third) ? first : max(second, third);;
+		return first > max(second, third) ? first : max(second, third);
 	}
 }
