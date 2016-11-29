@@ -8,15 +8,13 @@ package arrayturn;
 	 /**
 	 *This method overturns the array.
 	 *@param array - array
-	 *@return - array
 	 */
-	 public int[] back(int[] array) {
+	 public void back(int[] array) {
 		 int value;
 		 for (int i = 0; i < array.length / 2; i++) {
 			value = array[i];
 			array[i] = array[(array.length - 1) - i];
 			array[(array.length - 1) - i] = value;
 		 }
-		 return array;
 	 }
 }
