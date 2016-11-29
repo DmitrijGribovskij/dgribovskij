@@ -6,16 +6,25 @@ package max;
 */
 public class Max {
 	/**
-	* At most from two numbers
+	* At most from two numbers.
 	*/
 	/**
-	* method max.
+	* method max two numbers.
 	* @param first - first number.
 	* @param second - second number.
 	* @return - max number
 	*/
 	public int max(int first, int second) {
-		int max = first > second ? first : second;
-		return max;
+		return first > second ? first : second;;
+	}
+	/**
+	* method max three numbers.
+	* @param first - first number.
+	* @param second - second number.
+	* @param third - third number.
+	* @return - max number
+	*/
+	public int max(int first, int second, int third) {
+		return first > max(second, third) ? first : max(second, third);;
 	}
 }
