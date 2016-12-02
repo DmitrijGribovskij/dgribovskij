@@ -8,12 +8,13 @@ package paint;
 	/**
 	* Piramida.
 	* @param h - number
+	* @return - piramida
 	*/
-	 public void piramid(int h) {
+	 public String piramid(int h) {
         String space = " ";
         String symbol = "^";
+		StringBuilder builder = new StringBuilder();
         for (int j = 0; j < h; j++) {
-            StringBuilder builder = new StringBuilder();
             for (int i = 0; i <= h * 2; i++) {
                  if (i == h - j || i == h + j) {
                     builder.append(symbol);
@@ -21,7 +22,8 @@ package paint;
 					builder.append(space);
 				  }
             }
-            System.out.println(builder.toString());
+			builder.append("\n");
         }
+		return builder.toString();
     }
  }
