@@ -11,7 +11,7 @@ package arraysort;
 	 *@return - values
 	 */
 	 public int[] sort(int[] values) {
-	     for (int i = 0; i < values.length - 1; i++) {
+	     for (int i = 0; i < values.length; i++) {
 			 boolean check = true;
 			 for (int j = 0; j < values.length - i - 1; j++) {
 				 if (values[j] > values[j + 1]) {
