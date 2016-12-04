@@ -15,25 +15,19 @@ package testtask;
          char[] originChar = origin.toCharArray();
          char[] subChar = sub.toCharArray();
          boolean result = false;
-            for (int j = 0; j < originChar.length; j++) {
+            for (int j = 0; j <= originChar.length - subChar.length; j++) {
                 if (subChar[0] == originChar[j]) {
                     for (int i = 1; i < subChar.length; i++) {
-                        try {
                             if (subChar[i] == originChar[j + i]) {
                                 result = true;
                             } else {
                                 result = false;
                                 break;
                             }
-                        } catch (Exception e) {
-                            result = false;
-                        }
                     }
                 }
 				if (result) {
                     break;
-                } else {
-				continue;
                 }
             }
         return result;

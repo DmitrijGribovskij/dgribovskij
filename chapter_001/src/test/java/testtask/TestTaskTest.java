@@ -13,12 +13,21 @@ import static org.junit.Assert.assertThat;
 	 */
 	 private TestTask testtask = new TestTask();
 	 /**
-	 *Test method.
+	 *Test method (true).
 	 */
 	 @Test
-	 public void whenStringSubAndOriginThenBooleanResult() {
+	 public void whenStringSubAndOriginThenTrueResult() {
 		 final String originTest = "www.job4j.ru";
 		 final String subTest = "job4j";
 		 assertThat(testtask.contains(originTest, subTest), is(true));
+	 }
+	 /**
+	 *Test method (false).
+	 */
+	 @Test
+	 public void whenStringSubAndOriginThenFalseResult() {
+		 final String originTest = "www.job4j.ru";
+		 final String subTest = "job4jy";
+		 assertThat(testtask.contains(originTest, subTest), is(false));
 	 }
  }
