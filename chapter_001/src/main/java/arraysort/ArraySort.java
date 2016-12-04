@@ -12,17 +12,12 @@ package arraysort;
 	 */
 	 public int[] sort(int[] values) {
 	     for (int i = 0; i < values.length; i++) {
-			 boolean check = true;
 			 for (int j = 0; j < values.length - i - 1; j++) {
 				 if (values[j] > values[j + 1]) {
 					 int value = values[j + 1];
 					 values[j + 1] = values[j];
 					 values[j] = value;
-					 check = false;
 				 }
-			 }
-			 if (check) {
-				 break;
 			 }
 		 }
 		 return values;

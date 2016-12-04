@@ -17,8 +17,8 @@ import static org.junit.Assert.assertThat;
      */
 	 @Test
      public void whenArrayThenSortArray() {
-		 final int[] resultTest = {1, 2, 3, 4, 5, 6, 7, 8};
+		 final int[] result = {1, 2, 3, 4, 5, 6, 7, 8};
 		 final int[] values = {7, 8, 5, 6, 4, 3, 1, 2};
-		 assertThat(arraysort.sort(values), is(resultTest));
+		 assertThat(arraysort.sort(values), is(result));
 	 }
  }
