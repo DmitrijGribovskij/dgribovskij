@@ -16,8 +16,7 @@ package testtask;
          char[] subChar = sub.toCharArray();
          boolean result = false;
             for (int j = 0; j <= originChar.length - subChar.length; j++) {
-                if (subChar[0] == originChar[j]) {
-                    for (int i = 1; i < subChar.length; i++) {
+                    for (int i = 0; i < subChar.length; i++) {
                             if (subChar[i] == originChar[j + i]) {
                                 result = true;
                             } else {
@@ -25,7 +24,6 @@ package testtask;
                                 break;
                             }
                     }
-                }
 				if (result) {
                     break;
                 }
