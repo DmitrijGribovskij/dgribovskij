@@ -18,7 +18,7 @@ import static org.junit.Assert.assertThat;
 	 @Test
 	 public void whenNumberThenPaintPiramid() {
 		 final int number = 2;
-		 final String resultTest = "  ^  " + "\n" + " ^ ^ " + "\n";
+		 final String resultTest = "  ^  \n ^ ^ \n";
 		 assertThat(paint.piramid(number), is(resultTest));
 	 }
  }
