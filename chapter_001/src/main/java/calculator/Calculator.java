@@ -6,37 +6,37 @@ package calculator;
 */
 public class Calculator {
 	/**
-	* result - результат вычисления.
+	* result - СЂРµР·СѓР»СЊС‚Р°С‚ РІС‹С‡РёСЃР»РµРЅРёСЏ.
 	*/
 	private double result;
 	/**
-	* sum - сумма двух чисел.
-	* @param first - первое число
-	* @param second - второе число
+	* sum - СЃСѓРјРјР° РґРІСѓС… С‡РёСЃРµР».
+	* @param first - РїРµСЂРІРѕРµ С‡РёСЃР»Рѕ
+	* @param second - РІС‚РѕСЂРѕРµ С‡РёСЃР»Рѕ
 	*/
 	public void sum(double first, double second) {
 		result = first + second;
 	}
 	/**
 	* subtraction.
-	* @param first - первое число
-	* @param second - второе число
+	* @param first - РїРµСЂРІРѕРµ С‡РёСЃР»Рѕ
+	* @param second - РІС‚РѕСЂРѕРµ С‡РёСЃР»Рѕ
 	*/
 	public void subtraction(double first, double second) {
 		result = first - second;
 	}
 	/**
 	* subtraction.
-	* @param first - первое число
-	* @param second - второе число
+	* @param first - РїРµСЂРІРѕРµ С‡РёСЃР»Рѕ
+	* @param second - РІС‚РѕСЂРѕРµ С‡РёСЃР»Рѕ
 	*/
 	public void multiplication(double first, double second) {
 		result = first * second;
 	}
 	/**
 	* subtraction.
-	* @param first - первое число
-	* @param second - второе число
+	* @param first - РїРµСЂРІРѕРµ С‡РёСЃР»Рѕ
+	* @param second - РІС‚РѕСЂРѕРµ С‡РёСЃР»Рѕ
 	*/
 	public void divide(double first, double second) {
 		if (second == 0) {
@@ -47,7 +47,7 @@ public class Calculator {
 	}
 	/**
 	* getResult.
-	* @return - result результат вычисления
+	* @return - result СЂРµР·СѓР»СЊС‚Р°С‚ РІС‹С‡РёСЃР»РµРЅРёСЏ
 	*/
 	public double getResult() {
 		return result;
