@@ -115,4 +115,13 @@ public class Item {
     public String getId() {
         return this.id;
     }
+    /**
+     * Переопределённый метод toSting.
+     * @return - Item.
+     */
+    @Override
+    public String toString() {
+        return "Name: " + getName() + " Id: " + getId() + " Description: " + getDescription() + " Date: " + getDateCreat() + "\n"
+                + "Comments: " + getComments();
+    }
 }

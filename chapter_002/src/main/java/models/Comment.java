@@ -37,7 +37,7 @@ public class Comment {
     private String getComment() {
         return this.comment; }
     /**
-     *
+     * Переопределённый метод toSting.
      * @return - getComment.
      */
     @Override
